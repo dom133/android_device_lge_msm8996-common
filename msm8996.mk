@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.lucye.rc \
     init.spectrum.rc \
+    init.safailnet.rc \
     ueventd.qcom.rc
 
 # Display
