@@ -1,3 +1,38 @@
+# Audio - Gemini 8.0.0/OPR1.170623.032/8.9.13
+etc/permissions/audiosphere.xml
+framework/audiosphere.jar
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbmapper.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libqtigef.so
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbmapper.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libqtigef.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libshoebox.so
+
+# Audio - acdbloader - from zl1
+vendor/lib/libacdbloader.so|034a5cf03cccfb22e415832c7d6a043dc52d98c0
+vendor/lib64/libacdbloader.so|33b45951c3098715b33bc1ab3ca606aa99fc2248
+
 # Bluetooth - aptX
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
@@ -62,6 +97,14 @@ lib/liblgkm.so
 lib64/hw/lgkm.default.so
 lib64/hw/lgkm.msm8996.so
 lib64/liblgkm.so
+
+# Listen - from OnePlus3
+vendor/lib/hw/sound_trigger.primary.msm8996.so|48674459b8e5dcec0231a9345c8824a248d8f537
+vendor/lib/libadpcmdec.so|cce776b6e1edac56705b155444c3f28362055442
+vendor/lib/libsmwrapper.so|2abf623b1f919e0747bfe70bc3d988521c02d14e
+vendor/lib/vendor.qti.voiceprint@1.0.so|a706a35926dde53af240cafea640ab9e607f0cf1
+vendor/lib64/hw/sound_trigger.primary.msm8996.so|d35bc552da96d2f0de10cebf39c9bb0dc0bf6ab0
+vendor/lib64/vendor.qti.voiceprint@1.0.so|e68fb38066c46a7f2b5be0f9a11300e01ec74dee
 
 # Misc firmware
 etc/firmware/leia_pfp_470.fw:vendor/firmware/leia_pfp_470.fw
