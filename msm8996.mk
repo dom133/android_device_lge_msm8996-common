@@ -329,6 +329,14 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_msm8996

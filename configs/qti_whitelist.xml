@@ -114,6 +114,10 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.server.wigigapp" />
     <hidden-api-whitelisted-app package="com.qti.service.colorservice" />
 
+    <!-- These telephony applications need access to non-[System]SDK APIs -->
+    <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
+    <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
+
     <allow-implicit-broadcast action="android.bluetooth.adapter.action.STATE_CHANGED" />
     <allow-implicit-broadcast action="android.intent.action.DROPBOX_ENTRY_ADDED" />
 </config>

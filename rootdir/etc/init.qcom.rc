@@ -51,6 +51,8 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -71,6 +73,7 @@ on early-boot
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
+
 
     # for backward compatibility
     chown system system /persist/sensors
@@ -1146,6 +1149,7 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
+
 
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
