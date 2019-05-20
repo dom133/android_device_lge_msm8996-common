@@ -276,6 +276,9 @@ service usf-post-boot /system/vendor/bin/sh /system/etc/usf_post_boot.sh
 on property:init.svc.bootanim=stopped
     start usf-post-boot
 
+on property:sys.post_boot.parsed=1
+    start perfd
+
 ## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main

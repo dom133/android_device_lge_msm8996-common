@@ -817,6 +817,13 @@ service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
     disabled
     oneshot
 
+service perfd /system/vendor/bin/perfd
+   class main
+   user root
+   group root readproc system
+   socket perfd seqpacket 0666 root system
+   disabled
+
 service wifi_ftmd /system/vendor/bin/wifi_ftmd
     user system
     group system inet net_admin
